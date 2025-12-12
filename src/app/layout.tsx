@@ -3,7 +3,7 @@ import localFont from "next/font/local";
 import "./globals.css";
 
 const sfPro = localFont({
-  src: './fonts/SF-Pro-Text-Regular.woff2',
+  src: '../assets/fonts/SF-Pro.woff2',
   variable: "--font-sf-pro",
   display: 'swap',
   fallback: ['system-ui', 'sans-serif'],
