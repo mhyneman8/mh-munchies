@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
+import { RestaurantsProvider } from "@/contexts/RestaurantsContext";
 
 const sfPro = localFont({
   src: '../assets/fonts/SF-Pro.woff2',
@@ -25,7 +26,9 @@ export default function RootLayout({
       <body
         className={`antialiased`}
       >
-        {children}
+        <RestaurantsProvider>
+          {children}
+        </RestaurantsProvider>
       </body>
     </html>
   );
